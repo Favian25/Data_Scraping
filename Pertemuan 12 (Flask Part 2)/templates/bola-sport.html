@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block body %}
+    {% for data in data %}
+        <div class="row">
+            <div class="col-3">{{ data.find('img')|safe }}</div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <a href="{{ data.find('a',{'class':'news-list_link'})['href']|safe }}">
+                    <p class="fs-6">{{ data.find('img')['alt']|safe }}</p>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
