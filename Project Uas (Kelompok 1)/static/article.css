@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header h1 {
+    margin: 7px;
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 8px rgba(235, 61, 185, 70);
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #292b4a;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight: 600;
+    font-family: 'Orbitron', sans-serif;
+    gap: 2.5rem;
+    white-space: nowrap;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: 1px solid #ccc;
+    padding: 7.2px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    margin: 7px;
+    background-color: #eb3db9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 2px 2px 8px rgba(235, 61, 185, 70);
+}
+
+.container {
+    max-width: 800px;
+    margin: 80px auto 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.container p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container div {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
