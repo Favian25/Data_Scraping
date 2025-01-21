@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">Code Mata Uang</th>
+            <th scope="col">Kode Numerik</th>
+            <th scope="col">Detail Nama</th>
+            <th scope="col">Tanggal</th>
+            <th scope="col">Inverse</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in datas %}
+        <tr>
+            <td>{{ data['code'] }}</td>
+            <td>{{ data['numericCode'] }}</td>
+            <td>{{ data['name'] }}</td>
+            <td>{{ data['date'] }}</td>
+            <td>{{ data['inverseRate'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
