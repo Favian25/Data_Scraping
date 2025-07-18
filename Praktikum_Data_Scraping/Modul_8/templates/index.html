@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modul 8 - Scraping Berita</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-7xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6 text-center text-gray-700">Portal Berita</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="/bola-sport" class="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold text-red-600">Bola Sport</h2>
+        <p class="text-sm text-gray-600">Berita terbaru dari BolaSport.com</p>
+      </a>
+
+      <a href="/detik-jatim" class="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold text-red-600">Detik Jatim</h2>
+        <p class="text-sm text-gray-600">Berita daerah Jawa Timur dari Detik.com</p>
+      </a>
+
+      <a href="/detik-jateng" class="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold text-red-600">Detik Jateng</h2>
+        <p class="text-sm text-gray-600">Berita daerah Jawa Tengah dari Detik.com</p>
+      </a>
+
+      <a href="/detik-jabar" class="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold text-red-600">Detik Jabar</h2>
+        <p class="text-sm text-gray-600">Berita daerah Jawa Barat dari Detik.com</p>
+      </a>
+    </div>
+  </div>
+  {% block body %}{% endblock %}
+</body>
+</html>
